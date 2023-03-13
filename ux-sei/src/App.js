@@ -1,11 +1,12 @@
-
+import Navigation from './components/Navigation-bar';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-
-    </div>
+      <Navigation />
+      <h1>Hello World</h1>
+    </div >
   );
 }
 
