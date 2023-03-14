@@ -1,12 +1,13 @@
-import { useState } from "react"
-import "./NavBar.css"
-import Logo from '/Users/joynae/GA/portfolio-projects/Spotify-yt-practice/UX-SEI/ux-sei/src/Img/Drunk Cup 3 Black@3x.png'
-import Hamburger from '/Users/joynae/GA/portfolio-projects/Spotify-yt-practice/UX-SEI/ux-sei/src/Img/hamburger.svg'
+import { useState } from "react";
+import "./NavBar.css";
+import Hamburger from "../Img/hamburger.svg";
+import Logo from "../Img/Drunk Cup 3 Black@3x.png";
 
 
 
 
 export default function Navbar() {
+
   const [isNavExpanded, setIsNavExpanded] = useState(false)
   const [isDarkMode, setIsDarkMode] = useState(false)
 
@@ -14,15 +15,20 @@ export default function Navbar() {
     setIsDarkMode(!isDarkMode)
   }
 
+
   return (
     <nav className="navigation">
       <a href="/" className="brand-name">
-        <img src={Logo} alt='logo' width='70%' height='10%' />
+        <img src={Logo} alt="logo" width="70%" height="10%" />
       </a>
-      <img src={Hamburger} alt="burger" className="hamburger"
+      <img
+        src={Hamburger}
+        alt="burger"
+        className="hamburger"
         onClick={() => {
-          setIsNavExpanded(!isNavExpanded)
-        }} />
+          setIsNavExpanded(!isNavExpanded);
+        }}
+      />
 
       <div
         className={
@@ -65,5 +71,5 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
-  )
+  );
 }
