@@ -1,0 +1,100 @@
+.card {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 113px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  margin-bottom: 64px;
+}
+
+.card-container {
+  margin: 0 23px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  height: 113px;
+  width: 393px;
+  left: 0px;
+  top: 0px;
+  border-radius: 4px;
+}
+
+.card-content {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  bottom: 31.93%;
+  padding: 24px;
+  border-radius: 4px;
+  background: #ebebeb;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.card-description {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.card-button {
+  display: block;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0066cc;
+  border: none;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background-color: #0052a3;
+}
+
+.card-backing {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 42.77%;
+  bottom: 31.93%;
+  /* background: rgba(164, 93, 93, 0.75); */
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card-placeholder {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 42.77%;
+  bottom: 31.93%;
+  height: 100%;
+
+  background: rgba(164, 93, 93, 0.75);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card-placeholder-title {
+  /* font-family: "SF Pro Text"; */
+  display: inline-block;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: -0.165px;
+
+  color: #ffffff;
+}
