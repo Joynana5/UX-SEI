@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./NavBar.css";
-import Logo from "/Users/joynae/GA/portfolio-projects/Spotify-yt-practice/UX-SEI/ux-sei/src/Img/Drunk Cup 3 Black@3x.png";
-import Hamburger from "/Users/joynae/GA/portfolio-projects/Spotify-yt-practice/UX-SEI/ux-sei/src/Img/hamburger.svg";
+import Hamburger from "../Img/hamburger.svg";
+import Logo from "../Img/Drunk Cup 3 Black@3x.png";
 
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
