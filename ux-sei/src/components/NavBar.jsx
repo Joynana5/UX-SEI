@@ -3,8 +3,16 @@ import "./NavBar.css"
 import Logo from '/Users/joynae/GA/portfolio-projects/Spotify-yt-practice/UX-SEI/ux-sei/src/Img/Drunk Cup 3 Black@3x.png'
 import Hamburger from '/Users/joynae/GA/portfolio-projects/Spotify-yt-practice/UX-SEI/ux-sei/src/Img/hamburger.svg'
 
+
+
+
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false)
+  const [isDarkMode, setIsDarkMode] = useState(false)
+
+  function toggleDarkMode() {
+    setIsDarkMode(!isDarkMode)
+  }
 
   return (
     <nav className="navigation">
@@ -47,6 +55,14 @@ export default function Navbar() {
             <a href="/contact">About Us</a>
           </li>
         </ul>
+        <div className="theme-toggle">
+          <span>Light</span>
+          <label className="switch">
+            <input type="checkbox" onChange={toggleDarkMode} checked={isDarkMode} />
+            <span className="slider round"></span>
+          </label>
+          <span>Dark</span>
+        </div>
       </div>
     </nav>
   )
