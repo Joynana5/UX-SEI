@@ -26,13 +26,6 @@ const FullCard = ({
         <h2 className="card-placeholder-title">{cardTitle}</h2>
       </div>
       <img className="card-image" src={image} alt={cardTitle} />
-      <div className="card-content">
-        <h2 className="card-title">{cardTitle}</h2>
-        <p className="card-description">{description}</p>
-        <button className="card-button" onClick={onButtonClick}>
-          {buttonLabel}
-        </button>
-      </div>
       <div className="card-backing"></div>
     </div>
   );
