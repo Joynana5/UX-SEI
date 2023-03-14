@@ -1,7 +1,7 @@
 import React from "react";
-import picOne from "/Users/ahmedrahi/dev/unit-3/UX-SEI/ux-sei/src/Img/About Us.png";
-import picTwo from "/Users/ahmedrahi/dev/unit-3/UX-SEI/ux-sei/src/Img/Nearest Location.avif";
-import picThree from "/Users/ahmedrahi/dev/unit-3/UX-SEI/ux-sei/src/Img/Tea for Snacks.png";
+import picOne from "../Img/About Us.png";
+import picTwo from "../Img/Nearest Location.avif";
+import picThree from "../Img/Tea for Snacks.png";
 
 const FullCard = ({
   image,
