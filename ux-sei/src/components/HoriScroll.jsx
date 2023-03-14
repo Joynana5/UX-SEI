@@ -1,5 +1,5 @@
 import React from "react";
-import '../App.css';
+import './HoriScroll.css';
 import greenDragon from "../Img/Green Dragon Mock Up.jpg";
 import wizardsBeard from "../Img/Wizards Beard Bergamot Mock Up.jpg";
 import enchantedSpell from "../Img/Enchanted Spell Hibiscus Mock Up.jpg";
