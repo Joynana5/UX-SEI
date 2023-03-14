@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "../components/Carousel.css";
-import picOne from "/Users/ahmedrahi/dev/unit-3/UX-SEI/ux-sei/src/Img/New Arrivals.jpg";
-import picTwo from "/Users/ahmedrahi/dev/unit-3/UX-SEI/ux-sei/src/Img/Popular Blends.jpg";
-import picThree from "/Users/ahmedrahi/dev/unit-3/UX-SEI/ux-sei/src/Img/Find Locations.jpg";
-import picFour from "/Users/ahmedrahi/dev/unit-3/UX-SEI/ux-sei/src/Img/All Products CROP.jpg";
+import picOne from "../Img/New Arrivals.jpg";
+import picTwo from "../Img/Popular Blends.jpg";
+import picThree from "../Img/Find Locations.jpg";
+import picFour from "../Img/All Products CROP.jpg";
 
 const images = [
   { image: picOne, text: "New Arrivals" },
