@@ -1,5 +1,4 @@
 
-import "./App.css";
 import "./components/FullCard.css";
 import picOne from "./Img/About Us.png";
 import picTwo from "./Img/Nearest Location.avif";
@@ -16,14 +15,14 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <Carousel />
+      <HoriScroll />
       <div className="card-container">
         <FullCard image={picOne} />
         <FullCard image={picTwo} />
         <FullCard image={picThree} />
       </div>
 
-      <Carousel />
-      <HoriScroll />
       <Footer />
 
     </div>
