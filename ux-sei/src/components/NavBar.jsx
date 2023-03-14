@@ -3,8 +3,18 @@ import "./NavBar.css";
 import Hamburger from "../Img/hamburger.svg";
 import Logo from "../Img/Drunk Cup 3 Black@3x.png";
 
+
+
+
 export default function Navbar() {
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
+
+  const [isNavExpanded, setIsNavExpanded] = useState(false)
+  const [isDarkMode, setIsDarkMode] = useState(false)
+
+  function toggleDarkMode() {
+    setIsDarkMode(!isDarkMode)
+  }
+
 
   return (
     <nav className="navigation">
@@ -51,6 +61,14 @@ export default function Navbar() {
             <a href="/contact">About Us</a>
           </li>
         </ul>
+        <div className="theme-toggle">
+          <span>Light</span>
+          <label className="switch">
+            <input type="checkbox" onChange={toggleDarkMode} checked={isDarkMode} />
+            <span className="slider round"></span>
+          </label>
+          <span>Dark</span>
+        </div>
       </div>
     </nav>
   );
