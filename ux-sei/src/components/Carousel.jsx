@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
-import picOne from "/Users/ahmedrahi/dev/unit-3/UX-SEI/ux-sei/src/Img/New Arrivals.avif";
-import picTwo from "/Users/ahmedrahi/dev/unit-3/UX-SEI/ux-sei/src/Img/Popular Blends.avif";
-import picThree from "/Users/ahmedrahi/dev/unit-3/UX-SEI/ux-sei/src/Img/Find Locations.avif";
-import picFour from "/Users/ahmedrahi/dev/unit-3/UX-SEI/ux-sei/src/Img/All Products.png";
+import picOne from "/Users/ahmedrahi/dev/unit-3/UX-SEI/ux-sei/src/Img/New Arrivals.jpg";
+import picTwo from "/Users/ahmedrahi/dev/unit-3/UX-SEI/ux-sei/src/Img/Popular Blends.jpg";
+import picThree from "/Users/ahmedrahi/dev/unit-3/UX-SEI/ux-sei/src/Img/Find Locations.jpg";
+import picFour from "/Users/ahmedrahi/dev/unit-3/UX-SEI/ux-sei/src/Img/All Products CROP.jpg";
 
 const images = [
   { image: picOne, text: "New Arrivals" },
@@ -16,12 +16,14 @@ const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [indicatorColor, setIndicatorColor] = useState("#e2bcb0");
 
+  console.log(activeIndex);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 4000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);
@@ -34,12 +36,14 @@ const Carousel = () => {
     setActiveIndex(index);
   };
 
-  const handleSlideTransition = () => {
-    if (activeIndex !== images.length - 1) {
-      setIndicatorColor("#fff");
-      setTimeout(() => {
-        setIndicatorColor("#e2bcb0");
-      }, 4000);
+  const handleSlideTransition = (index) => {
+    if (index === activeIndex) {
+      if (activeIndex !== images.length - 1) {
+        setIndicatorColor("#fff");
+        setTimeout(() => {
+          setIndicatorColor("#e2bcb0");
+        }, 4000);
+      }
     }
   };
 
@@ -53,18 +57,11 @@ const Carousel = () => {
               src={imageObj.image}
               alt={`image-${index}`}
               onClick={() => setActiveIndex((prevIndex) => prevIndex + 1)}
-              onTransitionEnd={() => {
-                setActiveIndex((prevIndex) =>
-                  prevIndex === images.length - 1 ? 0 : prevIndex + 1
-                );
-                handleSlideTransition();
-              }}
+              data-index={index}
+              onTransitionEnd={(e) =>
+                handleSlideTransition(e.target.getAttribute("data-index"))
+              }
             />
-            {/* {index === 0 && (
-              <div className="text-container">
-                <h2>{imageObj.text}</h2>
-              </div>
-            )} */}
           </div>
         ))}
       </div>
