@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@700&family=Roboto:ital,wght@1,700&display=swap');
 
+* {
+  transition: all 0.3 ease;
+
+}
+
 .navigation {
   height: 60px;
   width: 100%;
@@ -10,6 +15,7 @@
   background-color: #E2BCB0;
   color: black;
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+  z-index: 1001;
 }
 
 .brand-name {
@@ -86,7 +92,7 @@
     flex-direction: column;
     /* // makes menu span full height and width */
     width: 198px;
-    height: calc(100vh -90px);
+    height: calc(100vh -100px);
     background-color: #A45D5D;
     /* border-top: 1px solid; */
     /* display: none; */
@@ -122,4 +128,132 @@
 li {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+}
+
+.toggle-container {
+  position: relative;
+  width: 64px;
+  height: 30px;
+  flex-grow: 0;
+  padding: 2px 2px 2px 7px;
+  border-radius: 36.5px;
+  background: linear-gradient(to right, #ffb800 -3%, #ff00b8 100%);
+  transition: background ease-out 300ms;
+}
+
+.body .toggle-container {
+  background: linear-gradient(90deg, #20045B -3.13%, #7A3DFA 103.13%);
+}
+
+
+.knob {
+  position: relative;
+  align-items: center;
+  left: 36px;
+  width: 26px;
+  height: 26px;
+  border-radius: 100px;
+  box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.03), 0 1px 1px 0 rgba(0, 0, 0, 0.01), 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: left ease-out 300ms;
+}
+
+.dark .knob {
+  left: 2px;
+}
+
+.moon {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 7.5px;
+  left: 7px;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.165px;
+  z-index: 1;
+}
+
+.moon-path {
+  fill: #FFC634;
+  transition: fill ease-out 3000ms;
+}
+
+.dark .moon-path {
+  fill: url("#dark-gradient")
+}
+
+.sun {
+  position: absolute;
+  width: 18px;
+  height: 17px;
+  top: 7px;
+  right: 4.75px;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.165px;
+  background: linear-gradient(90deg, #FF00B8 -8.33%, #FFB800 108.33%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  z-index: 1;
+}
+
+.swirl-container {
+  width: 29px;
+  height: 30px;
+  position: absolute;
+  left: 197px;
+}
+
+.swirl-path {
+  fill: #D79881;
+  transition: fill ease-out 300ms;
+}
+
+.dark .swirl-path {
+  fill: #fff;
+}
+
+.sun-path {
+  fill: url("#light-gradient");
+  transition: fill ease-out 300ms;
+}
+
+.dark .sun-path {
+  fill: #AD87FF;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.footer {
+  background-color: rgba(164, 93, 93, 0.75);
+}
+
+.dark .footer {
+  background-color: rgba(183, 183, 183, 0.75);
+  color:
+    #FFFFFF;
+}
+
+.name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color:
+    #FFFFFF;
+  margin: 3px 8px;
 }
