@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@700&family=Roboto:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&display=swap');
+
+
+.bigPage {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 20px;
+}
+
+.scrollContainer {
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  white-space: nowrap;
+  margin: 5px;
+  margin-bottom: -30px;
+  margin-top: -15px;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollHeaders {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  margin-left: 10px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.boxedTea {
+  display: inline-block;
+  border-radius: 5px;
+  margin: 5px;
+  height: 100px;
+  width: 117px;
+}
+
+.looseTea {
+  display: inline-block;
+  border-radius: 5px;
+  margin: 5px;
+  height: 100px;
+  width: 117px;
+}
+
+.drunkMenu {
+  display: inline-block;
+  border-radius: 5px;
+  margin: 5px;
+  height: 100px;
+  width: 117px;
+}
+
+.teaBoxes {
+  display: inline-block;
+}
+
+.teaLoose {
+  display: inline-block;
+}
+
+.veryDrunkMenu {
+  display: inline-block;
+}
+
+.seeMore {
+  position: relative;
+  background: rgba(164, 93, 93, 0.75);
+  font-size: 18px;
+  color: #FFFFFF;
+  display: inline-block;
+  bottom: 63px;
+  margin: 5px;
+  height: 103px;
+  width: 117px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.boxLooseAccess {
+  text-align: center;
+  font-weight: 600;
+  font-size: 13px;
+  margin: auto;
+  margin-top: -2px;
+}
+
+.separateScroll {
+  position: relative;
+  background: rgba(226, 188, 176, 0.2);
+  border-radius: 2px;
+  height: 1px;
+  width: 276px;
+  left: 50px;
+  margin-top: -10px;
+  margin-bottom: 25px;
+}
