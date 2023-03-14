@@ -23,7 +23,7 @@ const Carousel = () => {
       setActiveIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 2000);
+    }, 2300);
 
     return () => clearInterval(interval);
   }, []);

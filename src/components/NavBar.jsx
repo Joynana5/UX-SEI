@@ -31,6 +31,9 @@ export default function Navbar() {
       body.classList.remove("dark")
     }
   }, [state])
+
+
+
   const [isNavExpanded, setIsNavExpanded] = useState(false)
   const [isDarkMode, setIsDarkMode] = useState(false)
 

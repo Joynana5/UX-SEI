@@ -1,8 +1,8 @@
 
 import "./components/FullCard.css";
-import picOne from "./Img/About Us.png";
-import picTwo from "./Img/Nearest Location.avif";
-import picThree from "./Img/Tea for Snacks.png";
+import picOne from "./Img/About Us CROP.png";
+import picThree from "./Img/Nearest Location.avif";
+import picTwo from "./Img/Snacks.png";
 import Navbar from "./components/NavBar";
 import FullCard from "./components/FullCard";
 import "./components/Carousel.css";
@@ -17,6 +17,7 @@ function App() {
       <Navbar />
       <Carousel />
       <HoriScroll />
+
       <div className="card-container">
         <FullCard image={picOne} />
         <FullCard image={picTwo} />

@@ -7,12 +7,12 @@ export default function Footer() {
   return (
     <div className='footer'>
       <p className='name'>The Druncken Cup</p>
-      <p>10 E 21st St #2, New York, NY</p>
-      <p>10010</p>
-      <p>Sitemap</p>
-      <p>Privacy</p>
-      <p>Careers</p>
-      <p>Join Our Socials</p>
+      <p className='address'>10 E 21st St #2, New York, NY</p>
+      <p className='address'>10010</p>
+      <p className='address'>Sitemap</p>
+      <p className='address'>Privacy</p>
+      <p className='address'>Careers</p>
+      <p className='address'>Join Our Socials</p>
       <img src={Facebook} alt='social' className="icon" />
       <img src={Twitter} alt='social' className="icon" />
       <img src={Instagram} alt='social' className='icon' />
