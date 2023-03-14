@@ -1,6 +1,6 @@
-import "./App.css";
+import "./components/Carousel.css";
 import Navbar from "./components/NavBar";
-import Carousel from "./components/carousel";
+import Carousel from "./components/Carousel";
 
 function App() {
   return (
