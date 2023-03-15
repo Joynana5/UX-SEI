@@ -1,7 +1,7 @@
 
 import "./components/FullCard.css";
 import picOne from "./Img/About Us CROP.png";
-import picThree from "./Img/Nearest Location.png";
+import picThree from "./Img/Nearest-Location.png";
 import picTwo from "./Img/Snacks.png";
 import Navbar from "./components/NavBar";
 import FullCard from "./components/FullCard";
