@@ -1,6 +1,6 @@
 import React from "react";
-import picOne from "../Img/About Us CROP.png";
-import picThree from "../Img/Nearest-Location.png";
+import picThree from "../Img/About Us CROP.png";
+import picOne from "../Img/Nearest-Location.png";
 import picTwo from "../Img/Snacks.png";
 
 const FullCard = ({
