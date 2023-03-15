@@ -114,4 +114,8 @@ export default function Navbar() {
       </div>
     </nav>
   );
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
